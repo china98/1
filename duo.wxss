@@ -1,0 +1,71 @@
+/* 居中标题并设置字体颜色为红色 */
+.title {
+    text-align: center;
+    color: red;
+  }
+  
+  /* 在问题上添加一些填充 */
+  .question {
+    height: 70px; /* 设置固定高度 */
+    margin-top: 5rpx;
+    margin-bottom: 5rpx;
+  }
+  
+  
+  
+  /* 自定义进度条样式 */
+  progress {
+    width: 100%; /* 宽度设置为100%以充满父元素 */
+    height: 10px; /* 进度条高度为10像素 */
+    border-radius: 5px; /* 圆角半径为10像素 */
+    background-color: rgb(205, 207, 205); /* 进度条背景颜色为灰色 */
+  }
+  
+  /* 设置容器为相对定位 */
+  .container {
+    position: relative;
+  }
+  
+  /* 设置提交按钮为绝对定位，并将其放置在屏幕底部中心 */
+.submit-btn {
+    position: absolute;
+    bottom: 20rpx;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ff5252; /* 按钮背景色为红色 */
+    color: #fff; /* 按钮字体颜色为白色 */
+    font-size: 30rpx; /* 按钮字体大小为24rpx */
+    border-radius: 20rpx; /* 按钮圆角半径为20rpx */
+    box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.3); /* 按钮阴影 */
+    padding: 10rpx 30rpx; /* 增加按钮内边距以增加点击区域 */
+    width: calc(33.33% - 10rpx); /* 按钮宽度为屏幕宽度的1/3减去间距 */
+  }
+  
+  /* 设置上一题按钮为绝对定位，并将其放置在屏幕底部左侧 */
+  .prev-btn {
+    position: absolute;
+    bottom: 20rpx;
+    left: 0;
+    background-color: #ff5252; /* 按钮背景色为红色 */
+    color: #fff; /* 按钮字体颜色为白色 */
+    font-size: 30rpx; /* 按钮字体大小为24rpx */
+    border-radius: 20rpx; /* 按钮圆角半径为20rpx */
+    box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.3); /* 按钮阴影 */
+    padding: 10rpx 30rpx; /* 增加按钮内边距以增加点击区域 */
+    width: calc(33.33% - 10rpx); /* 按钮宽度为屏幕宽度的1/3减去间距 */
+  }
+  
+  /* 设置下一题按钮为绝对定位，并将其放置在屏幕底部右侧 */
+  .next-btn {
+    position: absolute;
+    bottom: 20rpx;
+    right: 0;
+    background-color: #ff5252; /* 按钮背景色为红色 */
+    color: #fff; /* 按钮字体颜色为白色 */
+    font-size: 30rpx; /* 按钮字体大小为24rpx */
+    border-radius: 20rpx; /* 按钮圆角半径为20rpx */
+    box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.3); /* 按钮阴影 */
+    padding: 10rpx 30rpx; /* 增加按钮内边距以增加点击区域 */
+    width: calc(33.33% - 10rpx); /* 按钮宽度为屏幕宽度的1/3减去间距 */
+  }
+  

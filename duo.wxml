@@ -1,0 +1,28 @@
+<!-- 显示当前题号和总题数 -->
+<view class="title">当前第{{current}}题/共{{titles.length}}题</view>
+<progress percent="{{progressPercent}}" show-info="{{progressPercent}}%" 
+border-radius="10" font-size="10" />
+<!-- 显示当前题目 -->
+<view class="question">题目:{{subject.title}}</view>
+<!-- 渲染多选选项，绑定选项改变事件 -->
+<checkbox-group bindchange="checkboxChange">
+  <view wx:for="{{subject.options}}" wx:key="code">
+    <checkbox name="{{'checkbox-' + current + '-' + item.code}}" value="{{item.code}}" checked="{{item.checked}}" />
+    <text>{{item.code}}:{{item.option}}</text>
+  </view>
+</checkbox-group>
+<!-- 按钮容器，设置为相对定位 -->
+<view class="button-group">
+  <!-- 上一题按钮 -->
+  <button class="prev-btn" disabled="{{prevBtnDisabled}}" bindtap="prevQuestion">
+    上一题
+  </button>
+  <!-- 提交答题按钮，绝对定位于底部中心 -->
+  <button class="submit-btn" type="primary" bindtap="submit" id="submit-btn">
+    提交答题
+  </button>
+  <!-- 下一题按钮 -->
+  <button class="next-btn" disabled="{{nextBtnDisabled}}" bindtap="nextQuestion">
+    下一题
+  </button>
+</view>
